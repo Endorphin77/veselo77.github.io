@@ -1,0 +1,84 @@
+.phone_app {
+    height: 864px;
+    background: url('../img/bg_phone.png') center center/cover no-repeat;
+    padding-top: 48px;
+}
+
+.phone_app .container .div_text {
+    
+    margin: 0 auto 0 auto;
+    width: 112px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.phone_app .container .title {
+    color: #222222;
+    font-size: 38px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 38px;
+}
+
+.phone_app .container .subtytle {
+    margin-top: 19px;
+    color: #222222;
+    font-size: 17px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 17px;
+    text-align: center;
+}
+
+.phone_app .container .row .imgs_div {
+    width: 1095px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 13px;
+}
+
+.phone_app .container .row .imgs_div .img_div {
+    margin-top: 19px;
+    display: relative;
+    width: 320px;
+    height: 280px;
+}
+
+.phone_app .container .row .imgs_div .img_div .img_bg {
+    position: absolute;
+    width: 320px;
+    height: 280px;
+}
+
+.phone_app .container .row .imgs_div .img_div .img_text {
+    padding-top: 91px;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.phone_app .container .row .imgs_div .img_div img {
+    display: block;
+    margin: 75px auto 0 auto;
+}
