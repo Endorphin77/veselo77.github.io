@@ -1,0 +1,34 @@
+.hamburger {
+    position: absolute;
+    width: 35px;
+    height: 25px;
+    top: 30px;
+    right: 30px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    & span {
+        width: 35px;
+        height: 3px;
+        background-color: #fff;
+        padding-bottom: 2px;
+        transition: 0.5s all;
+    }
+    &_active {
+        & span {
+            margin-bottom: -2px; 
+            &:nth-child(1) {
+                transform: translateY(3px) rotate(-45deg);
+            }     
+            &:nth-child(2) {
+                display: none
+            }
+            &:nth-child(3) {
+                transform: translateY(3px) rotate(45deg);
+            }
+        }
+       
+    }
+    
+
+}
