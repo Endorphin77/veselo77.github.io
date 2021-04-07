@@ -16,3 +16,12 @@ $(document).ready(function(){
             }]
     });
   });
+
+  $(document).scroll(function(){
+    if ($(window).scrollTop() > 80){
+      $('.header__top-nav').addClass('active');
+    }
+    else{
+      $('.header__top-nav').removeClass('active');
+    }
+  });
