@@ -1,9 +1,11 @@
 
 
 .header {
+    z-index: 12;
+    top: 0;
     position: fixed;
     width: 100%;
-    transition: 0.5s all;
+    transition: 0.3s all;
     &__crumbs {
         background-color: #dddddd;
         width: 100%;
@@ -23,7 +25,7 @@
                 text-decoration: none;
                 color: #515151;
                 font-weight: 400;
-                transition: 0.5s all;
+                transition: 0.3s all;
                 padding: 0 7px 0 7px;
                 border-right: 1px solid #ccc;
             }   
@@ -62,7 +64,7 @@
             display: flex;
             align-items: center;
             font-weight: 400;
-            transition: 0.5s all;
+            transition: 0.3s all;
             &:hover {
                 background-color: #e78419;
             }
@@ -80,21 +82,21 @@
     }
     &__top-nav {
         height: 82px;
-        transition: 0.5s all;
+        transition: 0.3s all;
         background: rgba(255, 255, 255, 0.95);
     }
     
     &__nav {
         & img {
             max-height: 100%;
-            transition: 0.5s all;
+            transition: 0.3s all;
         }
         & ul {
             display: flex;
             justify-content:space-between;
             list-style: none;
             height: 100%;
-            transition: 0.5s all;
+            transition: 0.3s all;
             & li {
                 height: 100%;
                 display: flex;
@@ -118,7 +120,7 @@
                         height: 2px;
                         width: 0px;
                         background-color: #f78912;
-                        transition: 0.5s all;
+                        transition: 0.3s all;
                         bottom: 0;
                     }
                     &:hover:after {
@@ -130,13 +132,14 @@
                         display: none;
                         flex-direction: column;
                         position: absolute;
-                        background-color: #f1f1f1;
+                        background-color: #dddddd;
                         min-width: 160px;
                         height: auto;
                         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
                         z-index: 1;
                         top: 10px;
-                        transition: 0.5s all;
+                        transition: 0.3s all;
+                        border-top: 2px solid #f78912;
                         & a {
                             padding: 12px 0px;
                         }
@@ -153,24 +156,19 @@
         }
     }
     .active {
-        height: 70px;
+        height: 60px;
         border-bottom: 1px solid #ccc;
         transition: 0.5s all;
         & ul {
-            height: 70px;
-            transition: 0.5s all;
+            height: 60px;
+            transition: 0.3s all;
         }
         & img {
-            height: 70px;
-            transition: 0.5s all;
+            height: 60px;
+            transition: 0.3s all;
         }
     }
-}
-
-.dox {
-    height: 1000px;
-    width: 100px;
-    border: 1px solid red;
+   
 }
 
 

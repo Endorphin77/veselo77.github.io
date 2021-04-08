@@ -1,0 +1,51 @@
+.promo {
+    &__title {
+        margin-top: 25px;
+        
+        & h1 {
+            border-left: 3px solid #f78912;
+            padding: 0 10px 0 10px;
+            color: #2A3F76;
+            font-size: 30px;
+            line-height: 1.1em;
+            font-weight: 400;
+        }
+        & hr {
+            box-sizing: content-box;
+            border: 0;
+            border-top: 1px solid #eee;
+            clear: both; 
+        }
+    }
+    
+    &__description {
+        
+        color: #999999;
+        
+        text-align: justify;
+    }
+    &__main-description {
+        padding: 15px;
+        font-size: 20px;
+        line-height: 1.5em;
+    }
+    &__low-description {
+        padding: 15px;
+        line-height: 1.3em;
+    }
+    &__sitelinks {
+        width: 90%;
+        margin: 0 auto;
+        height: 223px;
+        max-height: 80%;
+        border: dotted 3px #f78912;
+    }
+    
+    &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 15px 0 15px 0;
+    }
+    
+}
