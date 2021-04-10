@@ -2,7 +2,7 @@
     &__title {
         margin-top: 25px;
         
-        & h1 {
+        &-main {
             border-left: 3px solid #f78912;
             padding: 0 10px 0 10px;
             color: #2A3F76;
@@ -39,6 +39,19 @@
         height: 223px;
         max-height: 80%;
         border: dotted 3px #f78912;
+        &-row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &-link {
+            padding-bottom: 10px;
+            & a {
+                margin-left: 33px;
+                margin-right: 5px;
+                text-decoration: none;
+                color: #f78912;
+            }
+        }
     }
     
     &__right {
@@ -47,5 +60,11 @@
         justify-content: space-between;
         padding: 15px 0 15px 0;
     }
+    &__title-main_sitelink {
+        font-size: 28px;
+        line-height: 1em;
+        margin: 20px;
+    }
+    
     
 }

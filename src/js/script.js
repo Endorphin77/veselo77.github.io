@@ -20,6 +20,28 @@ $(document).ready(function(){
     });
   });
 
+  $(document).ready(function(){
+    $('.corusel__wrapper-products').slick({
+        speed: 800,
+        prevArrow: '<button type="button" class="slick-prev"><i class="bi bi-caret-left-fill"></i></button>',
+        nextArrow: '<button type="button" class="slick-next"><i class="bi bi-caret-right-fill"></i></button>',
+        autoplay: true,
+        autoplaySpeed: 5000,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+            {
+              breakpoint: 860,
+              settings: {
+                slidesToShow: 2,
+                
+                
+              }
+            }]
+    });
+  });
+
   $(document).scroll(function(){
     if ($(window).scrollTop() > 80){
       $('.header__top-nav').addClass('active');
