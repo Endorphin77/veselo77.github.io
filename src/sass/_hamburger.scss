@@ -1,22 +1,18 @@
 .hamburger {
-    position: absolute;
     width: 35px;
-    height: 25px;
-    top: 30px;
-    right: 30px;
     display: none;
     flex-direction: column;
     justify-content: space-between;
+    z-index: 100;
     & span {
-        width: 35px;
-        height: 3px;
-        background-color: #fff;
+        width: 40px;
+        background-color: #f78912;
         padding-bottom: 2px;
         transition: 0.5s all;
     }
     &_active {
         & span {
-            margin-bottom: -2px; 
+            margin-bottom: 30px; 
             &:nth-child(1) {
                 transform: translateY(3px) rotate(-45deg);
             }     
