@@ -1,8 +1,19 @@
 @import 'fonts.scss';
+::-moz-selection{
+    color: #fff;
+    background-color: #f78912;
+}
+::selection{
+    color: #fff;
+    background-color: #f78912;
+}
+::-webkit-selection {
+    color: #fff;
+    background-color: #f78912;
+}
 
 html {
     font-family: 'Roboto';
-    
 }
 
 
@@ -17,7 +28,7 @@ html {
 @import 'guidelines.scss';
 @import 'footer.scss';
 @import 'media.scss';
-
+@import 'search.scss';
 
 
 

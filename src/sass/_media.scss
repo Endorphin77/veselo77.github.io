@@ -1,32 +1,88 @@
-@media (max-width: 767px) {
-        .hamburger {
-            display: flex;
-            position: fixed;
-            right: 30px;
-            top: 50px;
-            height: 30px;
-            & span {
-                display: block ;
-                width: 100%;
-                background-color: #f78912;
-                margin-bottom: 10px;
-                transition: 0.5s all;
-            }
-		    &_active {
-                span {
-                    margin-bottom: -2px;
-                    &:nth-child(1) {
-                        transform: translateY(3px) rotate(-45deg);
-                        margin-top: 13px;
-                    }	
-                    &:nth-child(2) {
-                        display: none;
-                    }	
-                    &:nth-child(3) {
-                        transform: translateY(3px) rotate(45deg);
-                        margin-bottom: 17px;
-                    }
-                }
-            }   
+@media (max-width: 1200px) {
+    .promo__sitelinks {
+        &-link {
+            width: 100%;
+            flex-wrap: nowrap;
         }
+        height: auto;
+
+    }
+    .guidelines__img {
+        & img {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 990px) {
+    .header__logo {
+        img {
+            width: 300px;
+        }
+       
+    }
+    .header__nav {
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+        position: fixed;
+        right: 15%;
+        top: 60px;
+        height: 30px;
+        & span {
+            display: block ;
+            width: 100%;
+            background-color: #f78912;
+            margin-bottom: 10px;
+            transition: 0.5s all;
+        }
+        &_active {
+            span {
+                margin-bottom: -2px;
+                &:nth-child(1) {
+                    transform: translateY(3px) rotate(-45deg);
+                    margin-top: 13px;
+                }	
+                &:nth-child(2) {
+                    display: none;
+                }	
+                &:nth-child(3) {
+                    transform: translateY(3px) rotate(45deg);
+                    margin-bottom: 17px;
+                }
+            }
+        }   
+    }
+    .header {
+        .active {
+            img {
+                width: 250px;
+            }
+        }
+    }
+    .hamburger_scroll {
+        top: 50px;
+    }
+    .marquee {
+        .col-md-2 {
+            width: 25%;
+        }
+        .col-md-10 {
+            width: 75%;
+        }
+    }
+    .attention__text {
+        font-size: 20px;
+        line-height: 1.3em;
+    }
+    .footer__boxes-logo {
+        img {
+            width: 200px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+        
     }

@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: space-between;
     z-index: 100;
+    transition: 0.5s all;
     & span {
         width: 40px;
         background-color: #f78912;
@@ -12,7 +13,7 @@
     }
     &_active {
         & span {
-            margin-bottom: 30px; 
+            margin-bottom: -2px; 
             &:nth-child(1) {
                 transform: translateY(3px) rotate(-45deg);
             }     
